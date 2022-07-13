@@ -8,9 +8,13 @@ public class BookRunner {
 		Books effectivejava=new Books();
 		Books cleancode=new Books();
 		
-		artofprogramming.noofCopies=100;
-		effectivejava.noofCopies=50;
-		cleancode.noofCopies=45;
+		artofprogramming.setNoofCopies(100);
+		effectivejava.setNoofCopies(80);
+		cleancode.setNoofCopies(45);
+		
+		cleancode.increaseCopies(30);
+		int copies=cleancode.getNoofCopies();
+		System.out.println(copies  );
 	}
 
 }
